@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       
       - name: Install oci-cli
-        uses: bytesbay/oci-cli-action@v1.0.2
+        uses: danielwoodz/oci-cli-action@v1.0.2
         with:
           user: "${{ secrets.OCI_USER }}"
           fingerprint: "${{ secrets.OCI_FINGERPRINT }}"
